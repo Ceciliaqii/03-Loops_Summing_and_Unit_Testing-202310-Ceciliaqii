@@ -7,7 +7,7 @@ import pygame
 #     from Missiles import Missiles
 #     from Enemies import Enemies
 
-# TODO: Put your names here (entire team)
+# Mingjian Qin, Wenjian Zhang, Xiaoxi Qi
 
 
 class Game:
