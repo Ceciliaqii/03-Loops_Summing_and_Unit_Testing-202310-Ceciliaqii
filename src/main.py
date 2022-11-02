@@ -3,8 +3,8 @@ from Game import Game
 from Controller import Controller
 from View import View
 
-
-# TODO: Put your names here (entire team)
+# Mingjian Qin, Wenjian Zhang, Xiaoxi Qi
+# DONE: Put your names here (entire team)
 
 
 def main():
