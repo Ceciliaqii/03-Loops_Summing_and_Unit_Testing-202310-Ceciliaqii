@@ -1,4 +1,5 @@
 import pygame
+import random
 
 
 # Put each class in its own module, using the same name for both.
@@ -14,7 +15,8 @@ class Game:
     def __init__(self, screen: pygame.Surface):
         self.screen = screen
         # Store whatever YOUR game needs, perhaps something like this:
-        self.bill=Character(5,5,screen,"../assets/fighter.png")
+        self.bill=Character(5,5,screen,"../assets/Mike.png")
+        self.dice=Dice(screen, "../assets/fighter.png")
         #     self.fighter = Fighter(self.screen, self.missiles)
         #     self.enemies = Enemies(self.screen)
 
@@ -22,7 +24,7 @@ class Game:
         """ Ask all the objects in the game to draw themselves. """
         # Use something like the following, but for the objects in YOUR game:
         self.bill.draw()
-        #     self.missiles.draw()
+        self.dice.draw()
         #     self.enemies.draw()
 
     def run_one_cycle(self):
@@ -44,7 +46,7 @@ class Character:
         self.y=self.y+y1
 
     def draw(self):
-        self.screen.blit(self.image, (900,900))
+        self.screen.blit(self.image, (700,700))
 
 class Dice:
 
