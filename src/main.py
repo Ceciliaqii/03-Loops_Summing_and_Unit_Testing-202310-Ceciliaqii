@@ -9,14 +9,14 @@ from View import View
 
 def main():
     pygame.init()
-    screen = pygame.display.set_mode((640, 650))  # TODO: Choose your own size
-    pygame.display.set_caption("My Project")  # TODO: Choose your own title
+    screen = pygame.display.set_mode((5000, 5000))  # Done: Choose your own size
+    pygame.display.set_caption("The Big Ass Monopolyyyyyyy")  # Done: Choose your own title
     clock = pygame.time.Clock()
     game = Game(screen)  # the Model
     viewer = View(screen, game)  # the View
     controller = Controller(game)  # the Controller
 
-    frame_rate = 60  # TODO: Choose your own frame rate
+    frame_rate = 120  # Done: Choose your own frame rate
 
     while True:
         clock.tick(frame_rate)
