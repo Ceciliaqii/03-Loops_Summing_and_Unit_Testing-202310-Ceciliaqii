@@ -2,9 +2,7 @@ import pygame
 import sys
 from Game import Game
 
-
-# TODO: Put your names here (entire team)
-
+# Mingjian Qin, Wenjian Zhang, Xiaoxi Qi
 
 class Controller:
     def __init__(self, game: Game):
