@@ -15,7 +15,7 @@ def main():
     viewer = View(screen, game)  # the View
     controller = Controller(game)  # the Controller
 
-    frame_rate = 120  # Done: Choose your own frame rate
+    frame_rate = 1290  # Done: Choose your own frame rate
 
     while True:
         clock.tick(frame_rate)
