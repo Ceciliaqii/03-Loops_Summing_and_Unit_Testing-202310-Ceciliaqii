@@ -4,7 +4,6 @@ from Controller import Controller
 from View import View
 
 # Mingjian Qin, Wenjian Zhang, Xiaoxi Qi
-# DONE: Put your names here (entire team)
 
 
 def main():
