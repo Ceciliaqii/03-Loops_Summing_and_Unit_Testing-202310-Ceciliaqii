@@ -8,7 +8,7 @@ from View import View
 
 def main():
     pygame.init()
-    screen = pygame.display.set_mode((5000, 5000))  # Done: Choose your own size
+    screen = pygame.display.set_mode((950, 950))  # Done: Choose your own size
     pygame.display.set_caption("The Monopoly")  # Done: Choose your own title
     clock = pygame.time.Clock()
     game = Game(screen)  # the Model

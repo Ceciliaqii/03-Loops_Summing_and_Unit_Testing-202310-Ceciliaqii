@@ -17,6 +17,7 @@ class Game:
         # Store whatever YOUR game needs, perhaps something like this:
         self.bill=Character(5,5,screen,"../assets/Mike.png")
         self.dice=Dice(screen, "../assets/fighter.png")
+        self.map=Map(screen,"../assets/6920631.jpg")
         #     self.fighter = Fighter(self.screen, self.missiles)
         #     self.enemies = Enemies(self.screen)
 
@@ -25,6 +26,7 @@ class Game:
         # Use something like the following, but for the objects in YOUR game:
         self.bill.draw()
         self.dice.draw()
+        self.map.draw ()
         #     self.enemies.draw()
 
     def run_one_cycle(self):
@@ -59,3 +61,9 @@ class Dice:
 
     # def roll(self, immge, screen,
 
+class Map:
+    def __init__(self, screen, img):
+        self.screen=screen
+        self.img=pygame.image.load(img)
+    def draw(self):
+        self.screen.blit(self.img,(0,0))
