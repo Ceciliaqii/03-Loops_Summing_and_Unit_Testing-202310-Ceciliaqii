@@ -15,8 +15,8 @@ class Game:
     def __init__(self, screen: pygame.Surface):
         self.screen = screen
         # Store whatever YOUR game needs, perhaps something like this:
-        self.bill=Character(5,5,screen,"../assets/Mike.png")
-        self.dice=Dice(screen, "../assets/fighter.png")
+        self.bill=Character(5,5,screen,"../assets/dice1.png")
+        self.dice=Dice(screen, "../assets/dice2.png")
         self.map=Map(screen,"../assets/6920631.jpg")
         #     self.fighter = Fighter(self.screen, self.missiles)
         #     self.enemies = Enemies(self.screen)
