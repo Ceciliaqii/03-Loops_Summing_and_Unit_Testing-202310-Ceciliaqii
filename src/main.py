@@ -23,5 +23,4 @@ def main():
         game.run_one_cycle()
         viewer.draw_everything()  # Includes the pygame.display.update()
 
-
 main()

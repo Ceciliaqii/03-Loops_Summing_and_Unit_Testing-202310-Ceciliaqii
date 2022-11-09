@@ -12,22 +12,16 @@ def screen1(a,b,c):
 
     pygame.init()
 
-    display_width=1500
-    display_height=1000
+    display_width=950
+    display_height=950
 
-    Exit=False
+    exit=False
     while not exit:
         for event in pygame.event.get():
             if event.type==pygame.QUIT:
                 exit= True
-x = 615
-y1 = 200
-y2 = 300
-y3 = 400
-l = 200
-h = 50
-
-pygame.display.update()
+    function
+    pygame.display.update()
 
 
 
