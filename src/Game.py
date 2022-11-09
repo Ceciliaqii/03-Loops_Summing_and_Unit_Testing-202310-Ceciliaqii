@@ -15,18 +15,19 @@ class Game:
     def __init__(self, screen: pygame.Surface):
         self.screen = screen
         # Store whatever YOUR game needs, perhaps something like this:
-        self.bill=Character(5,5,screen,"../assets/Mike.png")
-        self.dice=Dice(screen, "../assets/fighter.png")
         self.map=Map(screen,"../assets/6920631.jpg")
+        self.bill = Character(30, 925, screen, "../assets/Mike.png")
+        self.dice = Dice(screen, "../assets/fighter.png")
         #     self.fighter = Fighter(self.screen, self.missiles)
         #     self.enemies = Enemies(self.screen)
 
     def draw_game(self):
         """ Ask all the objects in the game to draw themselves. """
         # Use something like the following, but for the objects in YOUR game:
+        self.map.draw()
         self.bill.draw()
         self.dice.draw()
-        self.map.draw ()
+
         #     self.enemies.draw()
 
     def run_one_cycle(self):
@@ -42,13 +43,21 @@ class Character:
         self.image=pygame.image.load(imaage)
         self.x=x
         self.y=y
+        self.saving=200
 
-    def move(self, x1, y1):
-        self.x=self.x + x1
-        self.y=self.y+y1
+    def move_left(self):
+        self.x=self.x - 1
+    def move_right(self):
+        self.x=self.x+1
 
     def draw(self):
-        self.screen.blit(self.image, (700,700))
+        self.screen.blit(self.image, (0,700))
+
+    def minus10(self):
+        self.saving=self.saving-10
+    def minus50(self):
+        self.screen=self.saving-50
+
 
 class Dice:
 
@@ -67,3 +76,5 @@ class Map:
         self.img=pygame.image.load(img)
     def draw(self):
         self.screen.blit(self.img,(0,0))
+
+
