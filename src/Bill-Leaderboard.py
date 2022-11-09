@@ -20,7 +20,6 @@ def screen1(a,b,c):
         for event in pygame.event.get():
             if event.type==pygame.QUIT:
                 exit= True
-    function
     pygame.display.update()
 
 
