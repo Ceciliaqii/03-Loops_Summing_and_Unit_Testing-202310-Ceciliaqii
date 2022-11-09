@@ -16,6 +16,17 @@ class Controller:
         self.exit_if_time_to_quit(events)
 
         pressed_keys = pygame.key.get_pressed()
+        # while True:
+        #     for event in pygame.event.get():
+        #         pressed_keys = pygame.key.get_pressed()
+        #         if pressed_keys[pygame.K_UP]:
+        #             print("up")
+        #         if pressed_keys[pygame.K_DOWN]:
+        #             print('down')
+        #         if pressed_keys[pygame.K_LEFT]:
+        #             print('left')
+        #         if pressed_keys[pygame.K_RIGHT]:
+        #             print("right")
 
     @staticmethod
     def exit_if_time_to_quit(events):

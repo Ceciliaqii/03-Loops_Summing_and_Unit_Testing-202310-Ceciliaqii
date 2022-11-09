@@ -1,6 +1,6 @@
 import pygame
 import random
-
+from Character import Character
 
 # Put each class in its own module, using the same name for both.
 # Then use statements like the following, but for YOUR classes in YOUR modules:
@@ -17,6 +17,8 @@ class Game:
         # Store whatever YOUR game needs, perhaps something like this:
         self.map=Map(screen,"../assets/6920631.jpg")
         self.bill = Character(30, 925, screen, "../assets/Mike.png")
+        self.baobei = Character(25, 900, screen, "../assets/dice2.png")
+        self.mutchler = Character(35, 950, screen, "../assets/dice3.png")
         self.dice = Dice(screen, "../assets/fighter.png")
         #     self.fighter = Fighter(self.screen, self.missiles)
         #     self.enemies = Enemies(self.screen)
@@ -27,6 +29,8 @@ class Game:
         self.map.draw()
         self.bill.draw()
         self.dice.draw()
+        self.baobei.draw()
+        self.mutchler.draw()
 
         #     self.enemies.draw()
 
@@ -36,28 +40,6 @@ class Game:
         #     self.missiles.move()
         #     self.enemies.move()
         #     self.missiles.handle_explosions(self.enemies)
-
-class Character:
-    def __init__(self, x, y, screen, imaage):
-        self.screen=screen
-        self.image=pygame.image.load(imaage)
-        self.x=x
-        self.y=y
-        self.saving=200
-
-    def move_left(self):
-        self.x=self.x - 1
-    def move_right(self):
-        self.x=self.x+1
-
-    def draw(self):
-        self.screen.blit(self.image, (0,700))
-
-    def minus10(self):
-        self.saving=self.saving-10
-    def minus50(self):
-        self.screen=self.saving-50
-
 
 class Dice:
 

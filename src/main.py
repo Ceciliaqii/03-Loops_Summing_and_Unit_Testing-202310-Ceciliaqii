@@ -2,6 +2,7 @@ import pygame
 from Game import Game
 from Controller import Controller
 from View import View
+from Character import Character
 
 # Mingjian Qin, Wenjian Zhang, Xiaoxi Qi
 
@@ -14,6 +15,7 @@ def main():
     game = Game(screen)  # the Model
     viewer = View(screen, game)  # the View
     controller = Controller(game)  # the Controller
+
 
     frame_rate = 31  # Done: Choose your own frame rate
 

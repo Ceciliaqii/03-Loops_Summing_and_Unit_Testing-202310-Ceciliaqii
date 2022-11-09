@@ -2,14 +2,23 @@ import pygame
 
 class Character:
     def __init__(self, x, y, screen, imaage):
-        self.screen=screen
-        self.image=pygame.image.load(imaage)
-        self.x=x
-        self.y=y
+        self.screen = screen
+        self.image = pygame.image.load(imaage)
+        self.x = x
+        self.y = y
+        self.saving = 200
 
-    def move(self, x1, y1):
-        self.x=self.x + x1
-        self.y=self.y+y1
+    def move_left(self):
+        self.x = self.x - 1
+
+    def move_right(self):
+        self.x = self.x + 1
 
     def draw(self):
-        self.screen.blit(self.image, (900,900))
+        self.screen.blit(self.image, (0, 700))
+
+    def minus10(self):
+        self.saving = self.saving - 10
+
+    def minus50(self):
+        self.screen = self.saving - 50
