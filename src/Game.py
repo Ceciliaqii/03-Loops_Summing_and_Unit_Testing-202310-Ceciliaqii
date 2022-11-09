@@ -24,9 +24,9 @@ class Game:
     def draw_game(self):
         """ Ask all the objects in the game to draw themselves. """
         # Use something like the following, but for the objects in YOUR game:
+        self.map.draw ()
         self.bill.draw()
         self.dice.draw()
-        self.map.draw ()
         #     self.enemies.draw()
 
     def run_one_cycle(self):

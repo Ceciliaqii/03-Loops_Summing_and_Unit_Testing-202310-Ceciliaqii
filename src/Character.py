@@ -13,3 +13,4 @@ class Character:
 
     def draw(self):
         self.screen.blit(self.image, (900,900))
+
