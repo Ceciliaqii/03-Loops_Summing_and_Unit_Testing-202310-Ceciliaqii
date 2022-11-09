@@ -16,9 +16,9 @@ class Game:
         self.screen = screen
         # Store whatever YOUR game needs, perhaps something like this:
         self.map=Map(screen,"../assets/6920631.jpg")
-        self.bill = Character(30, 925, screen, "../assets/Mike.png")
-        self.baobei = Character(25, 900, screen, "../assets/dice2.png")
-        self.mutchler = Character(35, 950, screen, "../assets/dice3.png")
+        self.bill = Character(30, 825, screen, "../assets/dice1.png")
+        self.baobei = Character(10, 850, screen, "../assets/dice2.png")
+        self.mutchler = Character(35, 880, screen, "../assets/dice3.png")
         self.dice = Dice(screen, "../assets/fighter.png")
         #     self.fighter = Fighter(self.screen, self.missiles)
         #     self.enemies = Enemies(self.screen)

@@ -15,7 +15,7 @@ class Character:
         self.x = self.x + 1
 
     def draw(self):
-        self.screen.blit(self.image, (0, 700))
+        self.screen.blit(self.image, (self.x, self.y))
 
     def minus10(self):
         self.saving = self.saving - 10
