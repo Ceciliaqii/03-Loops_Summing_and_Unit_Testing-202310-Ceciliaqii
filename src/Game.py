@@ -19,7 +19,6 @@ class Game:
         self.bill = Character(30, 825, screen, "../assets/dice1.png")
         self.baobei = Character(10, 850, screen, "../assets/dice2.png")
         self.mutchler = Character(35, 880, screen, "../assets/dice3.png")
-        self.dice = Dice(screen, "../assets/fighter.png")
         #     self.fighter = Fighter(self.screen, self.missiles)
         #     self.enemies = Enemies(self.screen)
 
@@ -28,7 +27,6 @@ class Game:
         # Use something like the following, but for the objects in YOUR game:
         self.map.draw()
         self.bill.draw()
-        self.dice.draw()
         self.baobei.draw()
         self.mutchler.draw()
 

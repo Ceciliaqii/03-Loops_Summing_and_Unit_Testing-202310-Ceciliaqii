@@ -6,7 +6,7 @@ class Character:
         self.image = pygame.image.load(imaage)
         self.x = x
         self.y = y
-        self.saving = 200
+        self.saving = 1000
 
     def move_left(self):
         self.x = self.x - 1
@@ -21,4 +21,7 @@ class Character:
         self.saving = self.saving - 10
 
     def minus50(self):
-        self.screen = self.saving - 50
+        self.saving = self.saving - 50
+
+    def plus100(self):
+        self.saving+=100

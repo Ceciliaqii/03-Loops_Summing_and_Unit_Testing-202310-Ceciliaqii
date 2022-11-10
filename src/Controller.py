@@ -40,6 +40,26 @@ class Controller:
                 self.game.baobei.x -= 2
             if pressed_keys[pygame.K_l]:
                 self.game.baobei.x += 2
+            if self.key_was_pressed_on_this_cycle(pygame.K_z, events):
+                self.game.mutchler.plus100()
+                print("Mutchler's saving: ", self.game.mutchler.saving)
+            if self.key_was_pressed_on_this_cycle(pygame.K_x, events):
+                self.game.bill.plus100()
+                print("Bill's saving: ", self.game.bill.saving)
+            if self.key_was_pressed_on_this_cycle(pygame.K_c, events):
+                self.game.baobei.plus100()
+                print("Baby's saving: ", self.game.baobei.saving)
+            if self.key_was_pressed_on_this_cycle(pygame.K_v, events):
+                self.game.mutchler.minus50()
+                print("Mutchler's saving: ", self.game.mutchler.saving)
+            if self.key_was_pressed_on_this_cycle(pygame.K_b, events):
+                self.game.bill.minus50()
+                print("Bill's saving': ", self.game.bill.saving)
+            if self.key_was_pressed_on_this_cycle(pygame.K_n, events):
+                self.game.baobei.minus50()
+                print("Baby's saving: ", self.game.baobei.saving)
+
+
         @staticmethod
         def exit_if_time_to_quit(events):
             for event in events:
