@@ -1,5 +1,5 @@
 import random
-
+import character
 import pygame
 
 class Dice:
